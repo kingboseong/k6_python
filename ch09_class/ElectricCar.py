@@ -67,4 +67,4 @@ my_leaf.battery.describe_battery() #하위 구성 객체 사용
 large_battery = Battery(80)
 large_battery_car = ElectricCar('nissan','leaf',2024, large_battery)
 large_battery_car.battery.describe_battery()
-print(f"이동 가능 거리는{large_battery_car.battery.get_renge()}")
+print(f"이동 가능 거리는{large_battery_car.battery.get_range()}")

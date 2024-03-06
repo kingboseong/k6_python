@@ -1,18 +1,11 @@
-a,b = input().split()
-a,b = int(a), int(b)
+a = int(input())
+if a%4 == 0:
+    if (a%100) != 0 or (a%400) == 0:
+        print(1)
+    else:
+        print(0)
+else:
+    print(0)
+        
 
-test = []
-
-for i in range(a, b+1):
-    test.append(i)
-
-# for i in range(a,b):
-#     count = 0
-#     for j in range(2,i):
-#         if i % j == 0:
-#             count += 1
-#             break
-#     if count == 0 :
-#         print(i)
-
-
+#if문을 열었으면 끝을 맺어줘야 한다고오오오옹
