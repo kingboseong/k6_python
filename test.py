@@ -1,11 +1,10 @@
-a = int(input())
-if a%4 == 0:
-    if (a%100) != 0 or (a%400) == 0:
-        print(1)
-    else:
-        print(0)
-else:
-    print(0)
-        
+data = []
+for _ in range(10):
+    data.append(int(input()) % 42)
 
-#if문을 열었으면 끝을 맺어줘야 한다고오오오옹
+answer = []
+for d in data:
+    if d not in answer:
+        answer.append(d)
+
+print(len(answer))
