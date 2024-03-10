@@ -10,7 +10,6 @@ squares = []
 for value in range(1, 11):
     # square = value ** 2  -> 가능하면 라인 수를 줄여라.
     squares.append(value ** 2)
-
 print(squares)
 print(value)
 
@@ -20,7 +19,7 @@ print(value)
 #파이썬은 아래 코드처럼 줄이는 것을 좋아함 , 같은 출력값.
 squares = [value ** 2 for value in range(1, 11)] #list comprehension = 리스트를 for 문으로 만들어 주는 문법
 print(squares)
-print(squares[5::-2]) #slice = 전체 중에서 일부만 썰어오는 문법. [] 괄호안에 오는 값 매우 다양하니 구글링해서 익히기.
+print(squares[5::-2]) #slice(슬라이스) = 전체 중에서 일부만 썰어오는 문법. [] 괄호안에 오는 값 매우 다양하니 구글링해서 익히기.
 
 a = [1,2,3,4]
 b = [3,4]
@@ -51,7 +50,7 @@ print(my_foods)
 print(friend_foods)
 
 dimensions = (10, 20, 30, 40, 50)
-# dimensions[0] = 30
+# dimensions[0] = 30 // 튜플이라서 오류남.
 print(dimensions)
 for dimension in dimensions:
     if dimension > 10:
