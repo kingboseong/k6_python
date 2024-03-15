@@ -14,7 +14,6 @@ for number in range(1,11):
     squares.append(number**2)
 print(squares)
 
-
 num = range(1,1000000)
 # print(num)
 print(min(num))
