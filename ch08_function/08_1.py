@@ -6,9 +6,8 @@ def greet_user(username): #usernam은 스트링은 immutable
 input_name = 'jesse'
 greet_user(input_name) #함수 호출
 input_name = 'kim' #값 변경이 아니라 변수를 다시 설정하는 것.
-print(input_name)
-# help(greet_user)
-# print(greet_user.__doc__)
+greet_user(input_name)
+
 
 def describe_pet(animal_type, pet_name='dog'): #기본값 = default parameter = 전달할 파라미터가 없으면 여기서 선언한 값을 사용하겠다
     """반려동물 정보 표시"""

@@ -16,8 +16,7 @@ class IceCreamStand(Restaurant):
         self.flavors = flavors
 
     def show_flavors(self):
-        print(f"맛이 {}".format(self.flavors))
-        print(f"맛이 self.flavors")
+        print(f"맛이 {self.flavors}")
 
 
 new_rest = Restaurant('보성식당', '양식')
